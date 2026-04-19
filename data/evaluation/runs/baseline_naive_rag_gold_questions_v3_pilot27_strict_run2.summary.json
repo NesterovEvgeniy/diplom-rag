@@ -1,0 +1,29 @@
+{
+  "run_id": "baseline_naive_rag_gold_questions_v3_pilot27_strict_run2",
+  "created_at_utc": "2026-04-04T08:20:00.292624+00:00",
+  "repo_root": "C:\\projects\\diplom-rag",
+  "questions_path": "C:\\projects\\diplom-rag\\data\\evaluation\\questions_gold\\gold_questions_v3_pilot27_strict.jsonl",
+  "output_jsonl": "C:\\projects\\diplom-rag\\data\\evaluation\\runs\\baseline_naive_rag_gold_questions_v3_pilot27_strict_run2.jsonl",
+  "ask_module": "src.apps.cli.main",
+  "k": 5,
+  "total_questions": 27,
+  "status_counts": {
+    "ok": 27,
+    "cli_error": 0,
+    "timeout": 0,
+    "invalid_input": 0,
+    "other_errors": 0
+  },
+  "metrics": {
+    "answerability_accuracy_proxy": 0.6296,
+    "no_answer_accuracy": 1.0,
+    "citation_presence_rate": 0.5185,
+    "gold_source_match_found_rate_on_answerable": 0.0,
+    "page_hit_rate_on_answerable": 0.0,
+    "all_gold_pages_covered_rate_on_answerable": 0.0,
+    "exact_cited_pages_match_rate_on_answerable": 0.0,
+    "page_hit_rate_on_answerable_legacy": 0.0,
+    "all_gold_pages_covered_rate_on_answerable_legacy": 0.0,
+    "exact_cited_pages_match_rate_on_answerable_legacy": 0.0
+  }
+}

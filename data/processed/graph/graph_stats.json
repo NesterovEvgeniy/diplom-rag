@@ -1,0 +1,11 @@
+{
+  "total_nodes": 2785,
+  "total_edges_directed": 22178,
+  "avg_degree": 7.9634,
+  "max_degree": 12,
+  "edge_type_counts": {
+    "prev_next": 2782,
+    "same_page": 1055,
+    "adjacent_page": 14504
+  }
+}

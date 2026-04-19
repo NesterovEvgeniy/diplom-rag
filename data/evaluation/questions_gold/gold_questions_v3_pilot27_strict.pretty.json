@@ -1,0 +1,858 @@
+﻿[
+    {
+        "question_id": "festy_beg_001",
+        "question": "Что такое ароматерапия?",
+        "answerable": true,
+        "book_anchor": "festy",
+        "book_position": "begin",
+        "coverage_type": "two_books",
+        "knowledge_type": "definition",
+        "reasoning_type": "single_hop",
+        "lexical_type": "exact",
+        "alt_valid": true,
+        "answer_type": "definition",
+        "target_items": ["лечение", "эфирные масла"],
+        "gold_answer": "Ароматерапия — это лечение с использованием эфирных масел.",
+        "primary_reference": {
+            "source_filename": "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+            "source_pages": [16],
+            "gold_answer": "Ароматерапия — это искусство лечения с использованием эфирных масел."
+        },
+        "alternative_references": [
+            {
+            "source_filename": "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+            "source_pages": [7],
+            "gold_answer": "Ароматерапия — древнейшее искусство лечения с использованием ароматов растений."
+            }
+        ],
+        "comment": "Definition-case. Ответ валиден по двум книгам. Для ответа достаточно одного источника; альтернативный источник также допустим."
+    },
+    {
+        "question_id":  "festy_beg_002",
+        "question":  "Чем эфирные масла отличаются от растительных масел?",
+        "answerable":  true,
+        "book_anchor":  "festy",
+        "book_position":  "begin",
+        "coverage_type":  "two_books",
+        "knowledge_type":  "comparison",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "paraphrase",
+        "alt_valid":  true,
+        "answer_type":  "comparison",
+        "target_items":  [
+                             "улетучиваются",
+                             "не оставляют пятен",
+                             "растительные масла"
+                         ],
+        "gold_answer":  "Эфирные масла летучи и не оставляют жирных пятен, а растительные масла не улетучиваются и являются жирными.",
+        "primary_reference":  {
+                                  "source_filename":  "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+                                  "source_pages":  [
+                                                       30,
+                                                       31
+                                                   ],
+                                  "gold_answer":  "Растительные масла не улетучиваются и оставляют жирные пятна, в отличие от эфирных масел."
+                              },
+        "alternative_references":  [
+                                       {
+                                           "source_filename":  "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                                           "source_pages":  [
+                                                                10
+                                                            ],
+                                           "gold_answer":  "Эфирные масла отличаются от жирных растительных масел тем, что улетучиваются при нормальной температуре и не оставляют пятен."
+                                       }
+                                   ],
+        "comment":  "Строгий comparison-case. Для корректного ответа нужны обе стороны сравнения."
+    },
+    {
+        "question_id":  "festy_beg_003",
+        "question":  "Зачем растениям нужны эфирные масла?",
+        "answerable":  true,
+        "book_anchor":  "festy",
+        "book_position":  "begin",
+        "coverage_type":  "all_books",
+        "knowledge_type":  "cause_effect",
+        "reasoning_type":  "multi_source",
+        "lexical_type":  "paraphrase",
+        "alt_valid":  true,
+        "answer_type":  "fact",
+        "target_items":  [
+                             "защита",
+                             "насекомых-опылителей"
+                         ],
+        "gold_answer":  "Эфирные масла нужны растениям для защиты от неблагоприятных факторов и микроорганизмов, а также для привлечения насекомых-опылителей.",
+        "primary_reference":  {
+                                  "source_filename":  "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+                                  "source_pages":  [
+                                                       15
+                                                   ],
+                                  "gold_answer":  "Эфирные масла нужны растениям для защиты и привлечения насекомых-опылителей."
+                              },
+        "alternative_references":  [
+                                       {
+                                           "source_filename":  "Дэвид К. Хилл. doTERRA. Руководство по химии эфирных масел.pdf",
+                                           "source_pages":  [
+                                                                11
+                                                            ],
+                                           "gold_answer":  "Растения производят эфирные масла, чтобы защититься от негативного воздействия окружающей среды."
+                                       },
+                                       {
+                                           "source_filename":  "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                                           "source_pages":  [
+                                                                10
+                                                            ],
+                                           "gold_answer":  "Эфирные масла служат для защиты растений и привлечения насекомых-опылителей."
+                                       }
+                                   ],
+        "comment":  "Сильный all_books-case. Допустим краткий ответ, но в нем должна присутствовать как минимум защитная функция."
+    },
+    {
+        "question_id":  "festy_mid_001",
+        "question":  "Что такое бородавки?",
+        "answerable":  true,
+        "book_anchor":  "festy",
+        "book_position":  "middle",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "definition",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "exact",
+        "alt_valid":  false,
+        "answer_type":  "definition",
+        "target_items":  [
+                             "доброкачественное новообразование кожи",
+                             "вирусной этиологии"
+                         ],
+        "gold_answer":  "Бородавки — это преимущественно доброкачественные новообразования кожи вирусной этиологии, имеющие вид узелка или сосочка.",
+        "primary_reference":  {
+                                  "source_filename":  "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+                                  "source_pages":  [
+                                                       201
+                                                   ],
+                                  "gold_answer":  "Бородавки — преимущественно доброкачественное новообразование кожи вирусной этиологии, имеющее вид узелка или сосочка."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Машинно-оценимый definition-case с одной страницей."
+    },
+    {
+        "question_id":  "festy_mid_002",
+        "question":  "В какую область лица наносят эфирное масло мяты перечной при головной боли или мигрени?",
+        "answerable":  true,
+        "book_anchor":  "festy",
+        "book_position":  "middle",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "procedure",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "exact",
+        "alt_valid":  false,
+        "answer_type":  "fact",
+        "target_items":  [
+                             "виски",
+                             "лоб"
+                         ],
+        "gold_answer":  "При головной боли или мигрени эфирное масло мяты перечной наносят на виски и лоб.",
+        "primary_reference":  {
+                                  "source_filename":  "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+                                  "source_pages":  [
+                                                       249
+                                                   ],
+                                  "gold_answer":  "Нанесите 2 капли эфирного масла на виски и лоб, стараясь не попасть в глаза."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Жесткий location-case. Ожидаются обе зоны: виски и лоб."
+    },
+    {
+        "question_id":  "festy_mid_003",
+        "question":  "Какова наиболее частая причина ячменя на веке?",
+        "answerable":  true,
+        "book_anchor":  "festy",
+        "book_position":  "middle",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "cause_effect",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "paraphrase",
+        "alt_valid":  false,
+        "answer_type":  "fact",
+        "target_items":  [
+                             "бактериальная инфекция",
+                             "золотистый стафилококк"
+                         ],
+        "gold_answer":  "Чаще всего ячмень на веке возникает из-за бактериальной инфекции, вызванной золотистым стафилококком.",
+        "primary_reference":  {
+                                  "source_filename":  "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+                                  "source_pages":  [
+                                                       520
+                                                   ],
+                                  "gold_answer":  "Ячмень возникает из-за бактериальной инфекции, вызванной чаще всего золотистым стафилококком."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Однозначный cause-effect case."
+    },
+    {
+        "question_id":  "festy_end_001",
+        "question":  "Какое эфирное масло является лучшим способом избавления от тошноты при беременности?",
+        "answerable":  true,
+        "book_anchor":  "festy",
+        "book_position":  "end",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "factoid",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "paraphrase",
+        "alt_valid":  false,
+        "answer_type":  "fact",
+        "target_items":  [
+                             "лимон"
+                         ],
+        "gold_answer":  "При тошноте для беременных рекомендуется эфирное масло лимона.",
+        "primary_reference":  {
+                                  "source_filename":  "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+                                  "source_pages":  [
+                                                       477
+                                                   ],
+                                  "gold_answer":  "Лучшим способом избавления от тошноты при беременности является эфирное масло лимона"
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Короткий factoid-case."
+    },
+    {
+        "question_id": "festy_end_002",
+        "question": "Могут ли комары и другие кровососущие насекомые быть переносчиками заболеваний?",
+        "answerable": true,
+        "book_anchor": "festy",
+        "book_position": "end",
+        "coverage_type": "one_book",
+        "knowledge_type": "constraint",
+        "reasoning_type": "single_hop",
+        "lexical_type": "paraphrase",
+        "alt_valid": true,
+        "answer_type": "fact",
+        "target_items": [
+            "переносчиками",
+            "заболеваний"
+        ],
+        "gold_answer": "Да. Комары и другие кровососущие насекомые могут быть переносчиками заболеваний.",
+        "primary_reference": {
+            "source_filename": "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+            "source_pages": [
+                410
+            ],
+            "gold_answer": "Комары и мухи являются частыми переносчиками большого числа заболеваний."
+        },
+        "alternative_references": [
+            {
+                "source_filename": "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+                "source_pages": [
+                    490
+                ],
+                "gold_answer": "Кровососущие насекомые являются также переносчиками зооноза."
+            }
+        ],
+        "comment": "Constraint/fact-case из конца книги с удаленными друг от друга упоминаниями. Допустим общий ответ о том, что комары и другие кровососущие насекомые могут переносить заболевания."
+    },
+    {
+        "question_id":  "festy_end_003",
+        "question":  "Какой pH смеси для лечения черных угрей указан в книге Фести?",
+        "answerable":  false,
+        "book_anchor":  "festy",
+        "book_position":  "end",
+        "coverage_type":  "none",
+        "knowledge_type":  "numeric",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "exact",
+        "alt_valid":  false,
+        "answer_type":  "refusal",
+        "target_items":  [
+                             "В источниках нет ответа."
+                         ],
+        "gold_answer":  "В источниках нет ответа.",
+        "primary_reference":  {
+                                  "source_filename":  "",
+                                  "source_pages":  [
+
+                                                   ],
+                                  "gold_answer":  "В источниках нет ответа."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Строгий refusal-case. В книге обсуждается лечение черных угрей, но pH смеси не приводится."
+    },
+    {
+        "question_id":  "hill_beg_001",
+        "question":  "Что такое эфирное масло с точки зрения современной науки?",
+        "answerable":  true,
+        "book_anchor":  "hill",
+        "book_position":  "begin",
+        "coverage_type":  "all_books",
+        "knowledge_type":  "definition",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "paraphrase",
+        "alt_valid":  true,
+        "answer_type":  "definition",
+        "target_items":  [
+                             "растение",
+                             "аромат"
+                         ],
+        "gold_answer":  "Эфирное масло — это летучая пахучая смесь веществ растительного происхождения, определяющая аромат растения.",
+        "primary_reference":  {
+                                  "source_filename":  "Дэвид К. Хилл. doTERRA. Руководство по химии эфирных масел.pdf",
+                                  "source_pages":  [
+                                                       11
+                                                   ],
+                                  "gold_answer":  "Современная наука определяет эфирное масло как эссенцию или экстракт, определяющий аромат и вкус растения."
+                              },
+        "alternative_references":  [
+                                       {
+                                           "source_filename":  "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+                                           "source_pages":  [
+                                                                15
+                                                            ],
+                                           "gold_answer":  "Эфирное масло — это пахучая смесь летучих веществ, выделенных из растений."
+                                       },
+                                       {
+                                           "source_filename":  "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                                           "source_pages":  [
+                                                                10
+                                                            ],
+                                           "gold_answer":  "Эфирные масла — летучие жидкие смеси органических веществ, вырабатываемые растениями и обусловливающие их приятный запах."
+                                       }
+                                   ],
+        "comment": "Сильный all_books definition-case. Допускается разная формулировка, но в ответе должно быть указано, что эфирное масло связано с растением и определяет его аромат."
+    },
+    {
+        "question_id":  "hill_beg_002",
+        "question":  "Какие три основных способа получения эфирных масел перечислены в книгах?",
+        "answerable":  true,
+        "book_anchor":  "hill",
+        "book_position":  "begin",
+        "coverage_type":  "all_books",
+        "knowledge_type":  "list",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "synonym",
+        "alt_valid":  true,
+        "answer_type":  "list",
+        "target_items":  [
+                             "паровая дистилляция",
+                             "холодный отжим",
+                             "экстракция растворителем"
+                         ],
+        "gold_answer":  "Три основных способа получения эфирных масел: паровая дистилляция, холодный отжим и экстракция растворителем.",
+        "primary_reference":  {
+                                  "source_filename":  "Дэвид К. Хилл. doTERRA. Руководство по химии эфирных масел.pdf",
+                                  "source_pages":  [
+                                                       12,
+                                                       13
+                                                   ],
+                                  "gold_answer":  "Три основных способа: паровая дистилляция, холодный отжим и экстракция растворителем."
+                              },
+        "alternative_references":  [
+                                       {
+                                           "source_filename":  "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+                                           "source_pages":  [
+                                                                18
+                                                            ],
+                                           "gold_answer":  "Основные приемы: дистилляция, отжим и экстракция растворителями."
+                                       },
+                                       {
+                                           "source_filename":  "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                                           "source_pages":  [
+                                                                11,
+                                                                12
+                                                            ],
+                                           "gold_answer":  "Указаны перегонка с водяным паром, механическое выжимание и экстрагирование растворителями; дополнительно описаны мацерация и анфлераж."
+                                       }
+                                   ],
+        "comment": "Сильный all-books list-case. Ответ может быть подтвержден каждым источником по отдельности; для строгой оценки засчитываются три базовых метода."
+    },
+    {
+        "question_id":  "hill_beg_003",
+        "question":  "Почему эфирные масла называются «эфирными» по книге Хилла?",
+        "answerable":  true,
+        "book_anchor":  "hill",
+        "book_position":  "begin",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "factoid",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "exact",
+        "alt_valid":  false,
+        "answer_type":  "fact",
+        "target_items":  [
+                             "сущность растения"
+                         ],
+        "gold_answer":  "По книге Хилла эфирные масла называются «эфирными», потому что являются «сущностью» растения.",
+        "primary_reference":  {
+                                  "source_filename":  "Дэвид К. Хилл. doTERRA. Руководство по химии эфирных масел.pdf",
+                                  "source_pages":  [
+                                                       11
+                                                   ],
+                                  "gold_answer":  "Эфирные масла называются «эфирными», потому что являются «сущностью» растения."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Жесткий factoid-case с дословно проверяемой формулировкой."
+    },
+    {
+        "question_id":  "hill_mid_001",
+        "question":  "Сколько основных групп встречаются в эфирных маслах ?",
+        "answerable":  true,
+        "book_anchor":  "hill",
+        "book_position":  "middle",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "numeric",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "exact",
+        "alt_valid":  false,
+        "answer_type":  "number",
+        "target_items":  [
+                             "8"
+                         ],
+        "gold_answer":  "По книге Хилла в эфирных маслах встречаются 8 основных функциональных групп.",
+        "primary_reference":  {
+                                  "source_filename":  "Дэвид К. Хилл. doTERRA. Руководство по химии эфирных масел.pdf",
+                                  "source_pages":  [
+                                                       18
+                                                   ],
+                                  "gold_answer":  "Только 8 основных групп встречаются в эфирных маслах."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Жесткий numeric-case."
+    },
+    {
+        "question_id":  "hill_mid_002",
+        "question":  "Какие 8 основных групп встречаются в эфирных маслах?",
+        "answerable":  true,
+        "book_anchor":  "hill",
+        "book_position":  "middle",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "list",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "exact",
+        "alt_valid":  false,
+        "answer_type":  "list",
+        "target_items":  [
+                             "спирты",
+                             "альдегиды",
+                             "алкены",
+                             "кетоны",
+                             "сложные эфиры",
+                             "эфиры",
+                             "фенолы",
+                             "фенилпропены"
+                         ],
+        "gold_answer":  "В эфирных маслах по книге Хилла встречаются спирты, альдегиды, алкены, кетоны, сложные эфиры, эфиры, фенолы и фенилпропены.",
+        "primary_reference":  {
+                                  "source_filename":  "Дэвид К. Хилл. doTERRA. Руководство по химии эфирных масел.pdf",
+                                  "source_pages":  [
+                                                       18
+                                                   ],
+                                  "gold_answer":  "К ним относятся спирты, альдегиды, алкены, кетоны, сложные эфиры, эфиры, фенолы и фенилпропены."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Строгий list-case. Нужен полный перечень всех восьми групп."
+    },
+    {
+        "question_id":  "hill_mid_003",
+        "question":  "Сколько атомов углерода содержится в структуре монотерпенов и сесквитерпенов?",
+        "answerable":  true,
+        "book_anchor":  "hill",
+        "book_position":  "middle",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "comparison",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "paraphrase",
+        "alt_valid":  false,
+        "answer_type":  "comparison",
+        "target_items":  [
+                             "монотерпены 10",
+                             "сесквитерпены 15"
+                         ],
+        "gold_answer":  "Монотерпены содержат 10 атомов углерода, а сесквитерпены — 15.",
+        "primary_reference":  {
+                                  "source_filename":  "Дэвид К. Хилл. doTERRA. Руководство по химии эфирных масел.pdf",
+                                  "source_pages":  [
+                                                        16
+                                                   ],
+                                  "gold_answer":  "Монотерпены имеют структуру из 10 атомов углерода, а сесквитерпены — из 15."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Жесткий comparison/numeric-case."
+    },
+    {
+        "question_id":  "hill_end_001",
+        "question":  "Сколько процентов коричного альдегида содержит кассия?",
+        "answerable":  true,
+        "book_anchor":  "hill",
+        "book_position":  "end",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "numeric",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "exact",
+        "alt_valid":  false,
+        "answer_type":  "number",
+        "target_items":  [
+                             "75–97 %"
+                         ],
+        "gold_answer":  "Для кассии указан диапазон 75–97 % коричного альдегида.",
+        "primary_reference":  {
+                                  "source_filename":  "Дэвид К. Хилл. doTERRA. Руководство по химии эфирных масел.pdf",
+                                  "source_pages":  [
+                                                        56
+                                                   ],
+                                  "gold_answer":  "Кассия содержит 75–97 % коричного альдегида."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Строгий numeric-case с диапазоном."
+    },
+    {
+        "question_id":  "hill_end_002",
+        "question":  "Какие системы организма, согласно книге Хилла, поддерживает коричный альдегид?",
+        "answerable":  true,
+        "book_anchor":  "hill",
+        "book_position":  "end",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "list",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "paraphrase",
+        "alt_valid":  false,
+        "answer_type":  "list",
+        "target_items":  [
+                             "пищеварительная",
+                             "нервная",
+                             "сердечно-сосудистая",
+                             "клетки",
+                             "печень",
+                             "мозг",
+                             "почки"
+                         ],
+        "gold_answer":  "По книге Хилла коричный альдегид поддерживает здоровье клеток, печени, мозга и почек, а также функционирование пищеварительной, нервной и сердечно-сосудистой систем.",
+        "primary_reference":  {
+                                  "source_filename":  "Дэвид К. Хилл. doTERRA. Руководство по химии эфирных масел.pdf",
+                                  "source_pages":  [
+                                                       56
+                                                   ],
+                                  "gold_answer":  "Коричный альдегид поддерживает здоровье клеток, печени, мозга и почек и способствует функционированию пищеварительной, нервной и сердечно-сосудистой систем."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Строгий list-case. Для засчета нужны как минимум три системы и перечисление органов/клеток."
+    },
+    {
+        "question_id":  "hill_end_003",
+        "question":  "Какой pH метилсалицилата указан в книге Хилла?",
+        "answerable":  false,
+        "book_anchor":  "hill",
+        "book_position":  "end",
+        "coverage_type":  "none",
+        "knowledge_type":  "numeric",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "exact",
+        "alt_valid":  false,
+        "answer_type":  "refusal",
+        "target_items":  [
+                             "В источниках нет ответа."
+                         ],
+        "gold_answer":  "В источниках нет ответа.",
+        "primary_reference":  {
+                                  "source_filename":  "",
+                                  "source_pages":  [
+
+                                                   ],
+                                  "gold_answer":  "В источниках нет ответа."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment": "Строгий list-case. Для засчета нужен полный перечень: пищеварительная, нервная и сердечно-сосудистая системы, а также клетки, печень, мозг и почки."
+    },
+    {
+        "question_id":  "nik_beg_001",
+        "question":  "Какой химический элемент назван главным элементом эфирного масла?",
+        "answerable":  true,
+        "book_anchor":  "nik",
+        "book_position":  "begin",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "factoid",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "exact",
+        "alt_valid":  false,
+        "answer_type":  "fact",
+        "target_items":  [
+                             "кислород"
+                         ],
+        "gold_answer":  "Главным элементом эфирного масла назван кислород.",
+        "primary_reference":  {
+                                  "source_filename":  "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                                  "source_pages":  [
+                                                       13
+                                                   ],
+                                  "gold_answer":  "Кислород — главный элемент эфирного масла."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Короткий факт с однозначным ответом."
+    },
+    {
+        "question_id":  "nik_beg_002",
+        "question":  "Каким методом предлагают определять состав или натуральность эфирного масла?",
+        "answerable":  true,
+        "book_anchor":  "nik",
+        "book_position":  "begin",
+        "coverage_type":  "two_books",
+        "knowledge_type":  "procedure",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "paraphrase",
+        "alt_valid":  true,
+        "answer_type":  "fact",
+        "target_items":  [
+                             "хроматограф"
+                         ],
+        "gold_answer":  "Состав или натуральность эфирного масла предлагают определять методом хроматографии, в том числе газохроматографическим анализом.",
+        "primary_reference":  {
+                                  "source_filename":  "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                                  "source_pages":  [
+                                                       16
+                                                   ],
+                                  "gold_answer":  "Идентификацию и количественное определение состава проводят на основании газохроматографического и хромато-масс-спектрометрического анализа."
+                              },
+        "alternative_references":  [
+                                       {
+                                           "source_filename":  "Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf",
+                                           "source_pages":  [
+                                                                23
+                                                            ],
+                                           "gold_answer":  "Натуральность эфирного масла проверяют с помощью хроматографического теста."
+                                       }
+                                   ],
+        "comment": "Строгий procedure/fact-case. Допустим как общий ответ «хроматография», так и более точный ответ «газохроматографический анализ»."
+    },
+    {
+        "question_id":  "nik_beg_003",
+        "question":  "Какая концентрация ароматов в воздухе помещения рекомендуется для взрослых?",
+        "answerable":  true,
+        "book_anchor":  "nik",
+        "book_position":  "begin",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "numeric",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "paraphrase",
+        "alt_valid":  false,
+        "answer_type":  "number",
+        "target_items":  [
+                             "1 мг/м3"
+                         ],
+        "gold_answer":  "Для взрослых рекомендуется концентрация ароматов 1 мг/м3.",
+        "primary_reference":  {
+                                  "source_filename":  "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                                  "source_pages":  [
+                                                       99
+                                                   ],
+                                  "gold_answer":  "В воздухе помещения создают концентрацию ароматов 1 мг/м3 для взрослых."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Жесткий numeric-case."
+    },
+    {
+        "question_id": "nik_mid_001",
+        "question": "Можно ли использовать растительные ароматы для санации воздуха помещений и профилактики инфекции?",
+        "answerable": true,
+        "book_anchor": "nik",
+        "book_position": "middle",
+        "coverage_type": "one_book",
+        "knowledge_type": "constraint",
+        "reasoning_type": "single_hop",
+        "lexical_type": "paraphrase",
+        "alt_valid": true,
+        "answer_type": "fact",
+        "target_items": [
+            "снижают микробную обсемененность",
+            "профилактики инфекции"
+        ],
+        "gold_answer": "Да. Растительные ароматы используют для санации воздуха помещений, снижения микробной обсемененности и профилактики инфекции.",
+        "primary_reference": {
+            "source_filename": "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+            "source_pages": [161],
+            "gold_answer": "Ароматизация воздуха спальных и игровых комнат детских садов с целью профилактики респираторных заболеваний снижает микробную обсемененность атмосферы помещений в 3—4 раза."
+        },
+        "alternative_references": [
+            {
+                "source_filename": "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                "source_pages": [167],
+                "gold_answer": "Основная цель ароматизации палат — профилактика стафилококковой инфекции и кандидоза, улучшение гигиенических качеств воздуха в палате."
+            }
+        ],
+        "comment": "Строгий constraint-case из средней части книги. Допустим ответ о применении растительных ароматов для санации воздуха помещений и профилактики инфекции."
+    },
+    {
+        "question_id": "nik_mid_002",
+        "question": "Можно ли использовать растительные ароматы как антистрессоры?",
+        "answerable": true,
+        "book_anchor": "nik",
+        "book_position": "middle",
+        "coverage_type": "one_book",
+        "knowledge_type": "constraint",
+        "reasoning_type": "single_hop",
+        "lexical_type": "paraphrase",
+        "alt_valid": true,
+        "answer_type": "fact",
+        "target_items": [
+            "антистрессор",
+            "эмоциональное напряжение"
+        ],
+        "gold_answer": "Да. Растительные ароматы можно использовать как антистрессоры, поскольку они помогают снижать эмоциональное напряжение.",
+        "primary_reference": {
+            "source_filename": "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+            "source_pages": [
+                206
+            ],
+            "gold_answer": "Среди них много таких, которые обладают антистрессорным действием. Стоит принять ванну с антистрессорным эфирным маслом или сделать массаж с таким же маслом, подышать антистрессорными ароматами, и стресс покинет вас."
+        },
+        "alternative_references": [
+            {
+                "source_filename": "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                "source_pages": [
+                    109, 110
+                ],
+                "gold_answer": "Под влиянием ароматов появляется бодрость, снижаются усталость и эмоциональное напряжение."
+            }
+        ],
+        "comment": "Строгий constraint-case из средней части книги. Допустим ответ о применении растительных ароматов как антистрессоров и их способности снижать эмоциональное напряжение."
+    },
+    {
+        "question_id":  "nik_mid_003",
+        "question":  "Как влияет мята на кровяное давление у больных гипертонической болезнью?",
+        "answerable":  true,
+        "book_anchor":  "nik",
+        "book_position":  "middle",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "cause_effect",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "exact",
+        "alt_valid":  false,
+        "answer_type":  "fact",
+        "target_items":  [
+                             "снижает",
+                             "кровяное давление"
+                         ],
+        "gold_answer":  "У больных гипертонической болезнью мята снижает кровяное давление.",
+        "primary_reference":  {
+                                  "source_filename":  "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                                  "source_pages":  [
+                                                       178
+                                                   ],
+                                  "gold_answer":  "У больных гипертонической болезнью мята снижает кровяное давление."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Короткий и однозначный effect-case."
+    },
+    {
+        "question_id":  "nik_end_001",
+        "question":  "Какая система названа ключевой в действии растительных ароматических веществ?",
+        "answerable":  true,
+        "book_anchor":  "nik",
+        "book_position":  "end",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "factoid",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "paraphrase",
+        "alt_valid":  true,
+        "answer_type":  "fact",
+        "target_items":  [
+                             "лимбическая система"
+                         ],
+        "gold_answer":  "Ключевой системой в действии растительных ароматических веществ названа лимбическая система.",
+        "primary_reference":  {
+                                  "source_filename":  "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                                  "source_pages":  [
+                                                       328
+                                                   ],
+                                  "gold_answer":  "Важной, ключевой системой в действии растительных ароматических веществ является лимбическая система."
+                              },
+        "alternative_references": [
+        {
+            "source_filename": "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+            "source_pages": [91],
+            "gold_answer": "Ключевой системой действия растительных ароматических веществ является лимбическая система, включающая гиппокамп, гипоталамус, миндалевидное ядро и другие образования."
+        }
+        ],
+        "comment":  "Короткий factoid-case из позднего теоретического раздела."
+    },
+    {
+        "question_id":  "nik_end_002",
+        "question":  "Как дефицит растительных ароматических веществ влияет на гомеостаз?",
+        "answerable":  true,
+        "book_anchor":  "nik",
+        "book_position":  "end",
+        "coverage_type":  "one_book",
+        "knowledge_type":  "cause_effect",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "paraphrase",
+        "alt_valid":  false,
+        "answer_type":  "fact",
+        "target_items":  [
+                             "нарушение",
+                             "гомеостаз"
+                         ],
+        "gold_answer":  "Дефицит растительных ароматических веществ нарушает стабильность функционирования физиологических систем и приводит к нарушениям гомеостаза.",
+        "primary_reference":  {
+                                  "source_filename":  "Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf",
+                                  "source_pages":  [
+                                                       333
+                                                   ],
+                                  "gold_answer":  "Снижение информационного потока РАВ связано с нарушением стабильности функционирования физиологических систем и развитием нарушений гомеостаза."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Строгий cause-effect case. Достаточно явно указать нарушение гомеостаза как следствие дефицита."
+    },
+    {
+        "question_id":  "nik_end_003",
+        "question":  "Какой стандарт ISO для эфирного масла нероли ?",
+        "answerable":  false,
+        "book_anchor":  "nik",
+        "book_position":  "end",
+        "coverage_type":  "none",
+        "knowledge_type":  "factoid",
+        "reasoning_type":  "single_hop",
+        "lexical_type":  "exact",
+        "alt_valid":  false,
+        "answer_type":  "refusal",
+        "target_items":  [
+                             "В источниках нет ответа."
+                         ],
+        "gold_answer":  "В источниках нет ответа.",
+        "primary_reference":  {
+                                  "source_filename":  "",
+                                  "source_pages":  [
+
+                                                   ],
+                                  "gold_answer":  "В источниках нет ответа."
+                              },
+        "alternative_references":  [
+
+                                   ],
+        "comment":  "Строгий refusal-case. В книге описываются свойства и состав, но стандарт ISO для нероли не приводится."
+    }
+]

@@ -1,0 +1,51 @@
+# -----------------------------
+# python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtual environments
+.venv/
+venv/
+env/
+
+# packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# type checkers / linters
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# jupyter
+.ipynb_checkpoints/
+
+# os / editor
+.DS_Store
+Thumbs.db
+
+# vscode / jetbrains
+.vscode/
+.idea/
+
+# local config / secrets
+.env
+.env.*
+!.env.example
+
+
+
+
+
+

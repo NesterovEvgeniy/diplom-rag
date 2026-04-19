@@ -1,0 +1,4 @@
+﻿filename,output_file,total_pages,raw_nonempty_pages,clean_nonempty_pages,empty_after_cleaning_pages,repeated_headers_detected,repeated_footers_detected,status,error
+"Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.pdf","data\processed\page_texts\Даниэль Фести. Энциклопедия ароматерапии для здоровья всей семьи, 2017.jsonl",546,538,538,8,0,0,ok,
+Дэвид К. Хилл.  dōTERRA. Руководство по химии эфирных масел.pdf,data\processed\page_texts\Дэвид К. Хилл. dōTERRA. Руководство по химии эфирных масел.jsonl,79,78,78,1,0,0,ok,
+"Н.Н.Николаевский. Ароматерапия справочник, 2000.pdf","data\processed\page_texts\Н.Н.Николаевский. Ароматерапия справочник, 2000.jsonl",349,348,348,1,0,0,ok,
